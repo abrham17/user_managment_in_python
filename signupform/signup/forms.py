@@ -26,3 +26,10 @@ class SignupForm(UserCreationForm):
         'placeholder': 'repeat your password',
         'class': 'w-full mb-3 p-3 bg-gray-100 rounded-xl'
     }))
+class UserUpdateForm(forms.ModelForm):
+    email = forms.EmailField(required=True)
+
+    class Meta:
+        model = User
+        fields = ['username', 'email', 'first_name', 'last_name']
+
