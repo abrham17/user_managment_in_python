@@ -14,11 +14,15 @@ A Django-based user management system with email verification, password reset, a
 clone git repo  
                      git clone "https://github.com/abrham17/user_managment_in_python"
 navigate to the repo
+
                      cd user_managment_in_python/signupform
+  
 install virtual environoment
+
                      pip install virtualenv
                      virtualenv .venv
                      .venv/Scripts/activate
+  
 install the neccessary libraries
                      pip install django
                      pip install python-dotenv
