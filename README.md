@@ -10,7 +10,7 @@ A Django-based user management system with email verification, password reset, a
 - Profile management (update info & password)
 - Email verification system with 6-digit codes
 
-                steps
+  steps
 clone git repo  
                      git clone "https://github.com/abrham17/user_managment_in_python"
 navigate to the repo
