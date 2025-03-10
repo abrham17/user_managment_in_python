@@ -12,21 +12,21 @@ A Django-based user management system with email verification, password reset, a
 
                 steps
 clone git repo  
-                 git clone "https://github.com/abrham17/user_managment_in_python"
+                     git clone "https://github.com/abrham17/user_managment_in_python"
 navigate to the repo
-                 cd user_managment_in_python/signupform
+                     cd user_managment_in_python/signupform
 install virtual environoment
-                 pip install virtualenv
-                 virtualenv .venv
-                 .venv/Scripts/activate
+                     pip install virtualenv
+                     virtualenv .venv
+                     .venv/Scripts/activate
 install the neccessary libraries
-                   pip install django
-                   pip install python-dotenv
+                     pip install django
+                     pip install python-dotenv
 migrate file
-                  python manage.py makemigrations
-                  python manage.py migrate
+                    python manage.py makemigrations
+                    python manage.py migrate
 run the web server
-                  python manage.py runserver
+                    python manage.py runserver
 
 
 project file structure
