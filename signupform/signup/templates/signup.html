@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sign Up</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .hidden { display: none; }
+  </style>
 </head>
 <body class="bg-gray-50">
   <div class="flex justify-center mt-10">
     <div class="w-1/2 bg-white p-8 rounded-lg shadow-lg">
       <h1 class="text-3xl font-semibold mb-6 text-center">Sign Up</h1>
-      <form action="/signup" method="POST">
+      <form action="/signup/" method="POST"> <!-- Note the trailing slash -->
         {% csrf_token %}
         <div class="mb-4">
           <label class="block mb-1 font-medium">Username:</label>
@@ -42,5 +45,18 @@
       </form>
     </div>
   </div>
+
+  <!-- Forgot Password Modal -->
+
+
+  <script>
+    function toggleModal(modalId) {
+      document.getElementById(modalId).classList.toggle('hidden');
+    }
+
+    function showVerificationSection() {
+      document.getElementById('verificationSection').classList.remove('hidden');
+    }
+  </script>
 </body>
 </html>

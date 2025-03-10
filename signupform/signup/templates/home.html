@@ -12,6 +12,10 @@
       <a href="{% url 'profile' %}" class ="px-10 py-4 bg-teal-500 hover:bg-teal-600 text-white text-xl font-semibold rounded-xl transition duration-200">
         Profile
       </a>
+      <form method="post" action="{% url 'logout' %}">
+        {% csrf_token %}
+        <button type="submit" class="px-10 py-4 bg-teal-500 hover:bg-teal-600 text-white text-xl font-semibold rounded-xl transition duration-200">Logout</button>
+      </form>      
     {% else %}
       <!-- Signup Button -->
       <a href="{% url 'signup' %}" class="px-10 py-4 bg-teal-500 hover:bg-teal-600 text-white text-xl font-semibold rounded-xl transition duration-200">
